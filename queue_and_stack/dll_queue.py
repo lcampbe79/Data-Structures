@@ -4,6 +4,8 @@ from doubly_linked_list import DoublyLinkedList
 
 class Queue:
     def __init__(self):
+        #keeps track of the size of the queue
+        #but is redundant below should delete
         self.size = 0
         # Why is our DLL a good choice to store our elements?
         self.storage = DoublyLinkedList()
@@ -22,3 +24,4 @@ class Queue:
 
     def len(self):
         return self.size
+        #suggested to change to self.storage.__len__()
